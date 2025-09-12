@@ -6,48 +6,40 @@ public class Cow
     public int Hunger { get; private set; }
     public int Happiness { get; private set; }
     public float Milk { get; private set; }
+    public string Sound { get; private set; }
 
     public Cow(string name, int hunger, int happiness, float milk)
     {
-        Name = name;
-        Hunger = ClampValue(hunger, 0, 50);
-        Happiness = ClampValue(happiness, 0, 50);
-        Milk = milk;
+        Name = name; Hunger = hunger; Happiness = happiness; Milk = milk;
+        Sound = "Moo!";
     }
 
-    private int ClampValue(int value, int min, int max)
+    public void AdjustHunger(int value)
     {
-        return (value < min) ? min : (value > max) ? max : value;
-    }
-
-    public void AdjustHunger(int amount)
-    {
-        Hunger = ClampValue(Hunger + amount, 0, 50);
+        Hunger += value;
+        if (Hunger < 0) Hunger = 0;
+        if (Hunger > 50) Hunger = 50;
         Debug.Log($"{Name}'s Hunger: {Hunger}");
     }
 
-    public void AdjustHappiness(int amount)
+    public void AdjustHappiness(int value)
     {
-        Happiness = ClampValue(Happiness + amount, 0, 50);
+        Happiness += value;
+        if (Happiness < 0) Happiness = 0;
+        if (Happiness > 50) Happiness = 50;
         Debug.Log($"{Name}'s Happiness: {Happiness}");
     }
 
     public void MakeSound()
     {
-        Debug.Log($"{Name} says: Moo Moo!");
-        AdjustHappiness(10);
+        Debug.Log($"{Name} says: {Sound}");
+        AdjustHappiness(10); // Moo แล้วแฮปปี้ขึ้น
     }
 
     public void Feed(string food)
     {
-        Debug.Log($"{Name} is eating {food}...");
-        AdjustHunger(-7);
+        Debug.Log($"{Name} is eating {food}.");
+        AdjustHunger(-8);
         AdjustHappiness(4);
-    }
-
-
-    public void GetStatus()
-    {
-        Debug.Log($"[Cow Status] {Name} - Hunger: {Hunger}, Happiness: {Happiness}, Milk: {Milk}");
     }
 }

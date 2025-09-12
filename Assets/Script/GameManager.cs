@@ -7,20 +7,18 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        chicken = new Chicken("Chicky", 20, 15, 0);
-        cow = new Cow("MooMoo", 25, 10, 1.5f);
+        // สร้างสัตว์
+        chicken = new Chicken("Chicky", 20, 30, 0);
+        cow = new Cow("MooMoo", 15, 25, 5.0f);
 
-        chicken.GetStatus();
+        // เรียก method ของ Chicken
         chicken.MakeSound();
-        chicken.Feed("Corn");
+        chicken.Feed("corn");
         chicken.Sleep();
-        chicken.GetStatus();
 
-        Debug.Log("--------------------------");
-
-        cow.GetStatus();
+        // เรียก method ของ Cow
         cow.MakeSound();
-        cow.Feed("Grass");
-        cow.GetStatus();
+        cow.Feed("grass");
     }
 }
+
