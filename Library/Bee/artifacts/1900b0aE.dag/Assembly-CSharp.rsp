@@ -409,8 +409,10 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Script/Animal.cs"
 "Assets/Script/Chicken.cs"
 "Assets/Script/Cow.cs"
+"Assets/Script/Duck.cs"
 "Assets/Script/GameManager.cs"
 -langversion:9.0
 /deterministic

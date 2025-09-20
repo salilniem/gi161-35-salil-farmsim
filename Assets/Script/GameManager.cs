@@ -1,24 +1,36 @@
+๏ปฟusing System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private Chicken chicken;
-    private Cow cow;
+    public List<Animal> farmAnimals; 
+    public List<Animal> animals;
 
     void Start()
     {
-        // สร้างสัตว์
-        chicken = new Chicken("Chicky", 20, 30, 0);
-        cow = new Cow("MooMoo", 15, 25, 5.0f);
+        Chicken chicken1 = (Chicken)Instantiate(farmAnimals[0]);
+        chicken1.Init("Azir", 10, 10, 0);
+        animals.Add(chicken1);
 
-        // เรียก method ของ Chicken
-        chicken.MakeSound();
-        chicken.Feed("corn");
-        chicken.Sleep();
+        Cow cow1 = (Cow)Instantiate(farmAnimals[1]);
+        cow1.Init("Alista", 10, 10, 0);
+        animals.Add(cow1);
 
-        // เรียก method ของ Cow
-        cow.MakeSound();
-        cow.Feed("grass");
+        Duck duck1 = (Duck)Instantiate(farmAnimals[2]);
+        duck1.Init("Yuumi", 10, 10, 0);
+        animals.Add(duck1);
+
+        Debug.Log($"Welcome to FarmSim! There are {animals.Count} animals living in HappyFarm.");
+
+        foreach (Animal animal in animals)
+        {
+            animal.GetStatus();
+            animal.MakeSound();
+            animal.Feed0(2);
+        }
     }
 }
+
+
+
 
