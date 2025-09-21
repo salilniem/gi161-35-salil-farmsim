@@ -3,22 +3,25 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public List<Animal> farmAnimals; 
+    public List<Animal> farmAnimals;
     public List<Animal> animals;
 
     void Start()
     {
-        Chicken chicken1 = (Chicken)Instantiate(farmAnimals[0]);
-        chicken1.Init("Azir", 10, 10, 0);
-        animals.Add(chicken1);
+        (string name, int hunger, int happiness)[] animalData =
+        {
+            ("Azir",   10, 10),   // Chicken
+            ("Alista", 15, 12),   // Cow
+            ("Yuumi",  8,  14)    // Duck
+        };
 
-        Cow cow1 = (Cow)Instantiate(farmAnimals[1]);
-        cow1.Init("Alista", 10, 10, 0);
-        animals.Add(cow1);
-
-        Duck duck1 = (Duck)Instantiate(farmAnimals[2]);
-        duck1.Init("Yuumi", 10, 10, 0);
-        animals.Add(duck1);
+        for (int i = 0; i < farmAnimals.Count; i++)
+        {
+            Animal newAnimal = Instantiate(farmAnimals[i]);
+            var data = animalData[i];
+            newAnimal.Init(data.name, data.hunger, data.happiness);
+            animals.Add(newAnimal);
+        }
 
         Debug.Log($"Welcome to FarmSim! There are {animals.Count} animals living in HappyFarm.");
 
@@ -30,6 +33,8 @@ public class GameManager : MonoBehaviour
         }
     }
 }
+
+
 
 
 

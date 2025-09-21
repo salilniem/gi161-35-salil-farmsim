@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\GitProject\\gi161-35-salil-lab4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|d:\\gitproject\\gi161-35-salil-lab4\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|d:\\gitproject\\gi161-35-salil-lab4\\assets\\script\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|D:\\GitProject\\gi161-35-salil-lab4\\assets\\script\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E98786DC-BE7B-0FCE-6B6B-3547B30A1C1D}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Duck.cs",
               "DocumentMoniker": "D:\\GitProject\\gi161-35-salil-lab4\\Assets\\Script\\Duck.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Duck.cs",
@@ -43,12 +43,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T15:55:33.149Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Cow.cs",
               "DocumentMoniker": "D:\\GitProject\\gi161-35-salil-lab4\\Assets\\Script\\Cow.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Cow.cs",
@@ -57,8 +56,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T09:19:20.086Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -76,13 +74,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Animal.cs",
               "DocumentMoniker": "D:\\GitProject\\gi161-35-salil-lab4\\Assets\\Script\\Animal.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Animal.cs",
               "ToolTip": "D:\\GitProject\\gi161-35-salil-lab4\\Assets\\Script\\Animal.cs",
               "RelativeToolTip": "Assets\\Script\\Animal.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCYAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T15:43:58.613Z",
               "IsPinned": true,
@@ -90,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\GitProject\\gi161-35-salil-lab4\\Assets\\Script\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
               "ToolTip": "D:\\GitProject\\gi161-35-salil-lab4\\Assets\\Script\\GameManager.cs",
               "RelativeToolTip": "Assets\\Script\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T09:18:43.111Z",
               "IsPinned": true,
