@@ -4,35 +4,45 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public List<Animal> farmAnimals;
-    public List<Animal> animals;
+    private List<Animal> animals = new List<Animal>();
 
     void Start()
     {
-        (string name, int hunger, int happiness)[] animalData =
-        {
-            ("Azir",   10, 10),   // Chicken
-            ("Alista", 15, 12),   // Cow
-            ("Yuumi",  8,  14)    // Duck
-        };
-
-        for (int i = 0; i < farmAnimals.Count; i++)
-        {
-            Animal newAnimal = Instantiate(farmAnimals[i]);
-            var data = animalData[i];
-            newAnimal.Init(data.name, data.hunger, data.happiness);
-            animals.Add(newAnimal);
-        }
+        SpawnAnimal<Chicken>(farmAnimals[0], "Azir", FoodType.Grain);
+        SpawnAnimal<Cow>(farmAnimals[1], "Alista", FoodType.Hay);
+        SpawnAnimal<Duck>(farmAnimals[2], "Yuumi", FoodType.Fish);
 
         Debug.Log($"Welcome to FarmSim! There are {animals.Count} animals living in HappyFarm.");
 
-        foreach (Animal animal in animals)
+        foreach (var animal in animals)
         {
             animal.GetStatus();
             animal.MakeSound();
-            animal.Feed0(2);
+
+            Debug.Log($"Feeding {animal.Name} with its favorite food...");
+            animal.Feed(FoodType.Grain, 3);
+            Debug.Log($"{animal.Name} produced: {animal.Produce()}");
+
+            Debug.Log($"Feeding {animal.Name} with Rotten Food...");
+            animal.Feed(FoodType.RottenFood, 2);
+            Debug.Log($"{animal.Name} produced: {animal.Produce()}");
+
+            Debug.Log($"Feeding {animal.Name} with too many favorite Food...");
+            animal.Feed(FoodType.Fish, 999);
+            Debug.Log($"{animal.Name} produced: {animal.Produce()}");
         }
     }
+
+    // Generic function for Spawn
+    void SpawnAnimal<T>(Animal prefab, string name, FoodType favorite) where T : Animal
+    {
+        T instance = (T)Instantiate(prefab);
+        instance.Init(name, favorite);
+        animals.Add(instance);
+    }
 }
+
+
 
 
 

@@ -2,23 +2,20 @@ using UnityEngine;
 
 public class Cow : Animal
 {
-    public float Milk { get; private set; }
-
-    public void Init(string name, int hunger, int happiness, float milk)
-    {
-        base.Init(name, hunger, happiness);
-        Milk = milk;
-    }
-
     public override void MakeSound()
     {
-        Debug.Log($"{Name} (วัว) ร้อง: Moo Moo!");
+        Debug.Log($"{Name} says Moo!");
     }
 
-    public override void GetStatus()
+    public override string Produce()
     {
-        base.GetStatus();
-        Debug.Log($"Milk: {Milk} liters");
+        if (Happiness > 70)
+        {
+            int milk = Happiness / 10;
+            Debug.Log($"{Name} produced {milk} units of Milk!");
+            return $"Total Milk: {milk} units";
+        }
+        return $"{Name} is not happy enough to produce milk.";
     }
 }
 
